@@ -1,0 +1,120 @@
+.reviews {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  // background-image: url('../images/products/bg-mob-1x.jpg');
+  // background: url('../images/products/bg-mob-1x.jpg');
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background: url(../images/products/bg-mob-2x.jpg);
+  // }
+  // @media screen and (min-width: 481px) {
+  //   background: url(../images/products/bg-tab-1x.jpg);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: url(../images/products/bg-tab-2x.jpg);
+  //   }
+  // }
+  // @media screen and (min-width: 769px) {
+  //   background: url(../images/products/bg-desk-1x.jpg);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: url(../images/products/bg-desk-2x.jpg);
+  //   }
+  // }
+
+  padding-top: 75px;
+  padding-bottom: 390px;
+
+  @include mq(tablet) {
+    padding-top: 55px;
+    padding-bottom: 370px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 123px;
+    padding-bottom: 230px;
+  }
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 14px;
+
+  @include mq(tablet) {
+    margin-top: 32px;
+  }
+}
+.reviews-img {
+  margin: 0 auto;
+  width: 85px;
+  min-height: 85px;
+  border-radius: 50%;
+}
+.reviews-box {
+  margin-top: 32px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  @include mq(tablet) {
+    margin-top: 28px;
+    margin-bottom: 32px;
+    border-radius: 24px;
+  }
+
+  @include mq(desktop) {
+    margin: 32px 119px;
+  }
+}
+.reviews-text {
+  border-radius: 20px;
+  padding: 34px 39px;
+  background-color: var(--mob-bg-color);
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-color-white);
+
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  @include mq(desktop) {
+    padding: 34px 109px;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+.reviews-place {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+
+  text-align: center;
+
+  color: var(--text-color-black);
+
+  @include mq(tablet) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+}
+.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background: #84a178;
+}

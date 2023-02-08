@@ -1,0 +1,84 @@
+<section id="how" class="section about" id="about">
+  <div class="container-about container">
+    <p class="about-paragraph">tradition and love</p>
+    <h2 class="about-title" id="about">how it's made?</h2>
+
+    <div class="image-about">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="image-about__foto wobble-hor-bottom"
+              srcset="
+                ./images/cow-mob@1x.png  279w,
+                ./images/cow-mob@2x.png  558w,
+                ./images/cow-tab@1x.png  336w,
+                ./images/cow-tab@2x.png  672w,
+                ./images/cow-desk@1x.png 490w,
+                ./images/cow-desk@2x.png 980w
+              "
+              src="./images/cow-mob@1x.png"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              width="280"
+              height="300"
+              alt="cow"
+              loading="lazy"
+            />
+          </div>
+          <div class="flip-card-back"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-description">
+      <p class="about-text">
+        Ice is a place where you will become not only a little happier, but also
+        healthier. Health is the main value for us, and we follow it when
+        creating our handmade desserts.
+      </p>
+      <p class="about-text two">
+        We use traditional recipes and 100% natural ingredients. Our products
+        are so natural that they can be given to children from the age of three
+        years. Sweets lovers can expect 55 types of ice cream, 15 types of
+        coffee and 23 milkshakes.
+      </p>
+      <p class="about-text three">
+        This is enough to choose ice cream and coffee for any mood!
+      </p>
+      <button class="btn-about" type="button" data-modal-open>
+        Read more<svg class="icon" width="12" height="12">
+          <use href="./images/icons.svg#arrow-small"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-btn" data-modal-close>
+      <svg class="icon-close" width="20" height="20">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">How it's made?</h3>
+    <div class="video-cow">
+      <video
+        autoplay
+        muted
+        loop
+        class="myVideo"
+        playsinline
+        width="448"
+        height="205"
+      >
+        <source src="./images/cow-video.mp4" />
+      </video>
+    </div>
+    <p class="modal-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>

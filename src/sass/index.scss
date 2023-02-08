@@ -1,0 +1,21 @@
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/mixin';
+
+@import './base/common';
+@import './base/reset';
+
+@import './components/container';
+@import './components/buttons';
+@import './components/title';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer';
+@import './layouts/reviews';
+@import './layouts/contacts';
+@import './layouts/footer';

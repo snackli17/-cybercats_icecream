@@ -1,0 +1,76 @@
+.swiper-pointer-events {
+  border-radius: 16px;
+}
+
+.gallery {
+ 
+  width: 100%;
+  background-image:linear-gradient(to bottom, #84a178 15%, transparent 15%);
+  @include mq(tablet){
+      background-image:linear-gradient(to bottom, #84a178 30%, transparent 30%);
+  }
+  @include mq(desktop){
+      background-image:linear-gradient(to bottom, #84a178 20%, transparent 20%);
+  }
+  // background-image: linear-gradient(var(--mob-bg-color) 20px, var(--mob-bg-color) 20px, url('../images/products/bg-mob-1x.jpg') );
+  // background-repeat: no-repeat;
+  // background-position: top;
+  // background-size: cover;
+
+  // background-repeat: no-repeat;
+  // background-position: top;
+  // background-size: contain;
+
+  // background-image: url('../images/products/bg-mob-1x.jpg');
+
+
+  // background: linear-gradient(to bottom, #84a178 15%, transparrent 15%);
+
+
+    // url('../images/products/bg-mob-1x.jpg');
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+  //     url(../images/products/bg-mob-2x.jpg);
+  // }
+  // @media screen and (min-width: 481px) {
+  //   background: linear-gradient(to bottom, #84a178 30%, transparent 30%),
+  //     url(../images/products/bg-tab-1x.jpg);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+  //       url(../images/products/bg-tab-2x.jpg);
+  //   }
+  // }
+  // @media screen and (min-width: 769px) {
+  //   background: linear-gradient(to bottom, #84a178 20%, transparent 20%),
+  //     url(../images/products/bg-desk-1x.jpg);
+
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+  //       url(../images/products/bg-desk-2x.jpg);
+  //   }
+  }
+
+  .swiper.mySwiper {
+    min-width: 280px;
+    min-height: 130px;
+    border-radius: 7px;
+
+    @include mq(tablet) {
+      min-width: 704px;
+      min-height: 327px;
+      border-radius: 18px;
+    }
+    @include mq(desktop) {
+      width: 1013px;
+      height: 422px;
+      border-radius: 24px;
+    }
+  }
+

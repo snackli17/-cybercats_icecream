@@ -1,0 +1,135 @@
+<section class="section hero-section">
+  <div class="container hero-container">
+    <div class="hero-wrap">
+      <div class="hero-box">
+        <h1 class="hero-title">ice cream made with passion</h1>
+        <ul class="hero-buttons-list">
+          <li class="hero-buttons">
+            <a href="#products" class="btn-hero">Products</a>
+          </li>
+          <li class="hero-buttons">
+            <a href="#about" class="btn-hero-secondary"> How it’s made? </a>
+          </li>
+        </ul>
+        <div class="hero-img-box">
+          <img
+            class="hero-img"
+            srcset="
+              ./images/icecream-m.png    157w,
+              ./images/icecream-m-2x.png 314w,
+              ./images/icecream-t.png    257w,
+              ./images/icecream-t-2x.png 514w,
+              ./images/icecream-d.png    447w,
+              ./images/icecream-d-2x.png 894w
+            "
+            src="./images/icecream-d.png "
+            sizes="(min-width: 1200px) 447px, (min-width: 768px) 257px, (min-width: 480px) 157px"
+            width="484"
+            height="590"
+            alt="ice cream with colorful scoops"
+          />
+          <div class="hero-img-bg"></div>
+        </div>
+      </div>
+      <div class="hero-places">
+        <ul class="hero-places-list">
+          <li class="hero-places-item">
+            <p class="hero-places-numbers">16</p>
+            <p class="hero-places-name">cafes</p>
+          </li>
+          <li class="hero-places-item">
+            <p class="hero-places-numbers">23</p>
+            <p class="hero-places-name">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-paragraph-box">
+      <img
+        class="hero-paragraph-img"
+        srcset="
+          ./images/hero-plate-tab.png     152w,
+          ./images/hero-plate-tab-x2.png  304w,
+          ./images/hero-plate-desk.png    225w,
+          ./images/hero-plate-desk-x2.png 450w
+        "
+        src="./images/hero-plate-desk.png"
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 354px"
+        width="225"
+        height="225"
+        alt="white plate with colorful ice cream scoops"
+      />
+      <div class="hero-paragraph-wrap">
+        <p class="hero-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="hero-paragraph-icon" width="40" height="16">
+          <use href="./images/icons.svg#arrow"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -------------------------------Modal window------------------------------------------------- -->
+
+<div class="hero-backdrop backdrop-is-hidden" data-modal-hero>
+  <div class="modal-hero">
+    <button class="close-btn" data-modal-hero-close>
+      <svg class="icon-close" width="20" height="20">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+    <p class="modal-label">Buy now</p>
+    <ul class="list products-list">
+      <li class="products-item cream cream-border">
+        <div class="products-desc">
+          <h3 class="products-title">ice cream</h3>
+        </div>
+      </li>
+      <li class="products-item coffee">
+        <div class="products-desc">
+          <h3 class="products-title">ice coffee</h3>
+        </div>
+      </li>
+      <li class="products-item milkshake milkshake-border">
+        <div class="products-desc">
+          <h3 class="products-title">milkshake</h3>
+        </div>
+      </li>
+    </ul>
+    <form class="register-form">
+      <label class="register-form-label">
+        <span class="register-form-group">
+          <input
+            class="register-form-input"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+          />
+        </span>
+      </label>
+      <label class="register-form-label">
+        <span class="register-form-group">
+          <input
+            class="register-form-input"
+            type="text"
+            name="user-tel"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+
+      <label for="user-comment" class="register-form-label"> </label>
+      <textarea
+        name="user-comment"
+        id="user-comment"
+        class="register-form-input textarea"
+        placeholder="Comment"
+      ></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>
